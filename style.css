@@ -1,0 +1,591 @@
+/* cursor */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #d6b48a;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+
+body{
+ background-color:  #10002b;
+}
+
+/* custom css */
+/* home page */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container h1 {
+    font-size: 100px;
+    margin-top: 80px;
+    color: #D4B4A1;
+    font-family: 'Yeseva One', serif;
+    text-shadow: 10px 10px 15px #000000;
+    animation-timing-function: ease-in;
+}
+.container p {
+    color: #AD7C59;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+   
+}
+li .nav-item {
+    padding-right: 20px;
+}
+
+.naviBar {
+    position: fixed;
+}
+.naviBar li {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #b100e8;
+    padding-top: 10px;
+}
+.navibar .navbar-brand{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.navbar .nav-item{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 20px;
+}
+/*footer */
+.footer {
+    left: 0;
+    top: 100px;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+    background-color: #80221E;
+}
+.footer a{
+    padding-right: 60px;
+    width: 50%;
+    
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* resume*/
+.about {
+    margin-top: 0px;
+}
+.about h1{
+    font-size: 90px;
+    color: #D4B4A1;
+}
+.about .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; ;
+}
+.about .btn {
+    font-weight: 400;
+    background-color: #B85C48;
+    position: relative;
+    display: inline-block;
+    color: aliceblue;
+    padding: 8px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.02);
+}
+.about .col .img {
+    width: 370px; /* Set width */
+    height: 550PX; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round the corners */
+    margin-bottom: 8px; /* Add margin */
+    display: block; /* Center the image */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.about p {
+    color: #CABCAB;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+   
+}
+ /* project */
+ #projects h1{
+    text-align: center;
+    margin: none;
+    font-size: 60px;
+    color: #D4B4A1;
+    font-family: 'Yeseva One', serif;
+    text-shadow: 10px 10px 15px #000000;
+    animation-timing-function: ease-in;
+ }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+
+}
+.container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(154, 124, 84, 0.5),
+    inset -5px -5px 5px rgba(201, 181, 98, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05),
+    -5px -5px 5px rgba(202, 166, 122, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+    background:#CABCAB;
+}
+.container .card .box {
+position: absolute;
+top: 20px;
+left: 20px;
+right: 20px;
+bottom: 20px;
+background:#CABCAB;
+box-shadow: 0 10px 20px rgba(65, 37, 71, 0.1);
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container .card:hover .box {
+    transform: translateY(-50px);
+    transition: 1.3s;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #D4B4A1, #B85C48);
+}
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 1.9em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.container .card:hover .box .content h2 {
+    font-size: 50px;
+    color: #80221E;
+}
+.container .card .box .content h3{
+    color: #191a2b;
+}
+.container .card:hover .box .content h3 {
+    font-size: 30px;
+    color: #10002b;
+    z-index: 1;
+transition: 0.5s;
+}
+.container .card .box .content p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #10002b;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card:hover .box .content p {
+    color: #040405;
+}
+.container .card .box .content a {
+    font-weight: 400;
+    background-color: #B85C48;
+    position: relative;
+    display: inline-block;
+    color: aliceblue;
+    padding: 8px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.02);
+}
+
+/*contact*/
+.section {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .half-screen {
+    height: 100%;
+    width: 50%;
+    background-image: url('—Pngtree—aesthetic earth tone line art_7269604.png');
+    background-size: cover;
+    background-position:center;
+    float: left;
+  }
+  .glass {
+    width: 80%; /* Adjust as needed */
+    text-align: center; /* Centers text within the div */
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .glass h1 {
+    font-family: 'Yeseva One', serif;
+  }
+.glass{
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    height: 400px;
+    padding: 35px;
+    background: linear-gradient(135deg, rgba(215, 102, 102, 0.1), rgba(201, 54, 54, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(235, 177, 119, 0.18);
+    box-shadow: 0 2px 12px 0 rgba(228, 130, 26, 0.311);
+  } 
+  
+  .btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+  }
+  .btn:hover {
+   color: #f9dbbd;
+  }
+  /* skills*/
+.skill h1{
+    margin-bottom: 40px;
+}
+.skill col {
+    height: 90px;
+}
+.skill h2{
+    margin-top: 30px;
+    text-align: center;
+    color: #80221E;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+    .skill img {
+        width: 370px; /* Set width */
+        height: 400PX; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add margin */
+        align-items: left; /* Center the image */
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+    .skill p{
+        color: #CABCAB;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+        padding: 20px;
+        margin-right: 40px;
+    }
+    
+    .item {
+        background-color: #8f2929ba;
+        border-radius: 5px;
+        width: 250px;
+        height: 200px; /* Adjust height as needed */
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+/* scroll animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.8s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/* mobile version */
+ @media only screen and (max-width: 600px)
+ {
+    .naviBar li {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .navibar .navbar-brand{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+    .navbar .nav-item{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+
+    }
+    .container h1 {
+        font-size: 100px;
+        line-height: 120px;
+        margin-top: 80px;
+        font-family: 'Yeseva One', serif;
+        text-shadow: 10px 10px 15px #000000;
+        animation-timing-function: ease-in;
+    }
+    .container p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 50px;
+        padding-left: 10px;
+       
+    }
+    .about h1 {
+        font-size: 70px;
+    }
+    .about .col .img {
+        width: 300px; /* Set width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Round the corners */
+        align-items: flex-end;
+    }
+    .about p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-left: 10px;
+       
+    }
+    
+    .skill h1{
+        margin-bottom: 40px;
+        font-size: 90px;
+    }
+    .skill h2{
+        margin-top: 30px;
+        text-align: center;
+        color: #80221E;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 80px;
+        font-weight: BOLD;
+    }
+        .skill img {
+           display: NONE; 
+        }
+        .skill p {
+            font-size: 30px;
+        }
+
+    .glass{
+        max-width: 300px;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 350px;
+        height: 600px;
+        padding: 35px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+  
+      } 
+      .glass h1{
+        font-size: 50px;
+        font-family: 'Yeseva One', serif;
+        margin-bottom: 60px;
+      }
+      form .input-group{
+        margin-bottom: 20px;
+      }
+      .btn {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 50px;
+        margin-top: 40px;
+      }
+      .half-screen {
+        width: 200px;
+        height:  300px;
+        background-image: url('—Pngtree—aesthetic earth tone line art_7269604.png');
+        background-size: cover;
+        background-position:center;
+        float: left;
+      }
+ }
+ @media only screen and (max-width: 768px)
+ {
+ 
+    .naviBar li {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .navibar .navbar-brand{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+    .navbar .nav-item{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+
+    }
+    .container h1 {
+        font-size: 100px;
+        line-height: 120px;
+        margin-top: 80px;
+        font-family: 'Yeseva One', serif;
+        text-shadow: 10px 10px 15px #000000;
+        animation-timing-function: ease-in;
+    }
+    .container p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 50px;
+        padding-left: 10px;
+       
+    }
+    .about h1 {
+        font-size: 70px;
+    }
+    .about .col .img {
+        width: 300px; /* Set width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Round the corners */
+        align-items: flex-end;
+    }
+    .about p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding-left: 10px;
+       
+    }
+    
+    .skill h1{
+        margin-bottom: 40px;
+        font-size: 90px;
+    }
+    .skill h2{
+        margin-top: 30px;
+        text-align: center;
+        color: #80221E;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 80px;
+        font-weight: BOLD;
+    }
+        .skill .mob {
+            display: none; 
+        }
+        .skill p {
+            font-size: 28px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 50px;
+            row-gap: 70px;
+            padding: 20px;
+            margin-right: 40px;
+        }
+        
+        .item {
+            background-color: #8f2929ba;
+            border-radius: 5px;
+            width: 250px;
+            height: 400px; /* Adjust height as needed */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    .glass{
+        max-width: 300px;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 350px;
+        height: 600px;
+        padding: 35px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+  
+      } 
+      .glass h1{
+        font-size: 50px;
+        font-family: 'Yeseva One', serif;
+        margin-bottom: 60px;
+      }
+      form .input-group{
+        margin-bottom: 20px;
+      }
+      .btn {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 50px;
+        margin-top: 40px;
+      }
+      .half-screen {
+        width: 200px;
+        height:  300px;
+        background-image: url('—Pngtree—aesthetic earth tone line art_7269604.png');
+        background-size: cover;
+        background-position:center;
+        float: left;
+      }
+ }
